@@ -1,14 +1,12 @@
 import java.util.Scanner;
 
-public class Bj10 {
+public class Nohello6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a, b;
+        int num;
 
-        a = sc.nextInt();
-        b = a - 543;
-
-        System.out.println(b);
+        num = sc.nextInt();
+        System.out.println("사용자가 입력한 값 + num");
 
         sc.close();
     }
