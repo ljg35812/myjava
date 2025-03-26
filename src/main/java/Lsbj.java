@@ -1,21 +1,23 @@
 import java.util.Scanner;
 
-public class Bj17 {
+public class Lsbj {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a;
 
-        a = sc. nextInt();
+        a = sc.nextInt();
 
-        if (a <=100 && a >= 90) {
+        if (a < 0 || a > 100) {
+            System.out.println("장난치지 마세요");
+        } else if (a >= 90) {
             System.out.println("A");
-        } else if (a <=89 && a >= 80) {
+        }else if (a >= 80) {
             System.out.println("B");
-        } else if (a <=79 && a >= 70) {
+        }else if (a >= 70) {
             System.out.println("C");
-        } else if (a <=69 && a >= 60) {
+        }else if (a >= 60) {
             System.out.println("D");
-        } else if (a <= 59) {
+        }else {
             System.out.println("F");
         }
 
