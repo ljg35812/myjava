@@ -20,6 +20,7 @@ public class Lebj21 {
         } else {
             System.out.println("0");
         }
+        sc.close();
 
     }
 }
