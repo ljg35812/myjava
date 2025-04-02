@@ -35,11 +35,9 @@ public class Hh3 {
             return;
         }
 
-        // ✅ 정수든 실수든 double로 처리
         double num1 = Double.parseDouble(a);
         double num2 = Double.parseDouble(b);
 
-        // 연산 수행
         switch (c) {
             case 1 -> System.out.printf("%.5f x %.5f = %.5f\n", num1, num2, num1 * num2);
             case 2 -> System.out.printf("%.5f / %.5f = %.5f\n", num1, num2, num1 / num2);
