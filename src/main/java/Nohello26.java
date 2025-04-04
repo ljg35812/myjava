@@ -1,16 +1,15 @@
 import java.util.Scanner;
 
-public class Le25 {
+public class Nohello26 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         int a = sc.nextInt();
 
-        if ((a % 4 == 0 && a % 100 != 0) || a % 400 == 0) {
-            System.out.println(1);
+        if (a % 2 == 0) {
+            System.out.println(a + "은 짝수입니다");
         } else {
-            System.out.println(0);
+            System.out.println(a + "은 홀수입니다");
         }
-        sc.close();
-
     }
 }
