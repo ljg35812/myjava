@@ -18,7 +18,7 @@ class HouseRabbit extends Rabbit6 {
 
     @Override
     void move(int x, int y) {
-        System.out.println("난 재정된 함수이다.!");
+        System.out.println("난 지정된 함수이다.!");
     }
 }
 
