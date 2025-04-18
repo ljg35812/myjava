@@ -9,13 +9,13 @@ public class Hh2 {
         try {
             System.out.print("값 a를 입력해주새요: ");
             a = sc.nextLine();
-            if (!a.matches("-?\\d*\\.\\d{1,5}")) {
+            if (a.matches("-?\\d*\\.\\d{6,}")) {
                 System.out.println("소수점 5의 자리 까지만 입력해주세요");
                 return;
             }
             System.out.print("값 b를 입력해주세요: ");
             b = sc.nextLine();
-            if (!b.matches("-?\\d*\\.\\d{1,5}")) {
+            if (b.matches("-?\\d*\\.\\d{6,}")) {
                 System.out.println("소수점 5자리 까지만 입력해 주세요");
                 return;
             }
@@ -24,7 +24,7 @@ public class Hh2 {
             return;
         }
 
-        System.out.println("곱하기(1번), 나누기(2번), 빼기(3번), 더하기(4번)중 원하시는 셈의 번호를 눌러주세요");
+        System.out.println("곱하기(1번), 나누기(2번), 더하기(3번), 빼기(4번)중 원하시는 셈의 번호를 눌러주세요");
 
         try {
             c = sc.nextInt();
@@ -62,7 +62,7 @@ public class Hh2 {
                 System.out.println(g + "입니다");
             }
 
-        } else if (a.matches("-?\\d*\\.\\d{1,5}") && (b.matches("-?\\d*\\.\\d{1,5}"))) {
+        } else if (a.matches("-?\\d*\\.\\d{6,}") && (b.matches("-?\\d*\\.\\d{6,}"))) {
 
             double aDouble = Double.parseDouble(a);
             double bDouble = Double.parseDouble(b);
@@ -85,7 +85,7 @@ public class Hh2 {
                 System.out.println(g + "입니다");
             }
 
-        } else if (a.matches("-?\\d+") && (b.matches("-?\\d\\.\\d{1,5}"))) {
+        } else if (a.matches("-?\\d+") && (b.matches("-?\\d\\.\\d{6,}"))) {
 
             aInt = Integer.parseInt(a);
             double bDouble = Double.parseDouble(b);
@@ -108,7 +108,7 @@ public class Hh2 {
                 System.out.println(g + "입니다");
             }
 
-        } else if (a.matches("-?\\d\\.\\d{1,5}") && (b.matches("-?\\d+"))) {
+        } else if (a.matches("-?\\d\\.\\d{6,}") && (b.matches("-?\\d+"))) {
 
             double aDouble = Double.parseDouble(a);
             bInt = Integer.parseInt(b);
