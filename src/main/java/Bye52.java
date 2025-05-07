@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Bye39 {
+public  class Bye52 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
@@ -13,6 +13,7 @@ public class Bye39 {
             System.out.print("*".repeat(i));
             System.out.println(" ".repeat(b));
         }
+
         sc.close();
     }
 }
