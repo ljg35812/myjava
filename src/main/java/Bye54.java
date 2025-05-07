@@ -1,5 +1,5 @@
-public class Bye26 {
-    public static void main(String[] args) {
+public class Bye54 {
+    public static void main (String[] args) {
         int a = 100;
         int b = 300;
         int c = 0;
