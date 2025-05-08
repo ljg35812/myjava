@@ -6,7 +6,7 @@ public class Lebj43 {
         int n = sc.nextInt();
         int m = sc.nextInt();
         int []a = new int[n];
-        int e, d;
+        int e, f;
 
         for (int i = 0; i < n; i++) {
             a[i] = i + 1;
@@ -17,7 +17,20 @@ public class Lebj43 {
             int c = sc.nextInt();
 
             e = b - 1;
-            d = c - 1;
+            f = c - 1;
+
+            while (e < b) {
+                int g = a[e];
+                a[e] = a[f];
+                a[f] = g;
+            }
         }
+
+        for (int i = 0; i < n; i++) {
+            System.out.print(a[i] + " ");
+        }
+        System.out.println();
+
+        sc.close();
     }
 }
