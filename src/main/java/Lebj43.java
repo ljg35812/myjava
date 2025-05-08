@@ -23,6 +23,8 @@ public class Lebj43 {
                 int g = a[e];
                 a[e] = a[f];
                 a[f] = g;
+                b++;
+                c--;
             }
         }
 
