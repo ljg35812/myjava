@@ -2,20 +2,22 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Lebj45 {
+public class Bye62 {
     public static void main(String[] args) {
         List<Integer> ls = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int x = sc.nextInt();
+        int a = Integer.MIN_VALUE;
+        System.out.print("배열개수 입력: ");
+        int b = sc.nextInt();
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < b; i++) {
             ls.add(sc.nextInt());
-            if (ls.get(i) < x) {
-                System.out.print(ls.get(i) + " ");
+
+            if (ls.get(i) > a) {
+                a = ls.get(i);
             }
         }
-        System.out.println();
+        System.out.println(a);
 
         sc.close();
     }
