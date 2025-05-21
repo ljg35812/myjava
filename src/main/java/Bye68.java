@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Nohello49 {
+public class Bye68 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         List<Map<String, String>> ls = new ArrayList<>();
