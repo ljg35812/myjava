@@ -30,7 +30,8 @@ public class Hh2 {
             c = sc.nextInt();
             if (c > 4 || c < 1) {
                 System.out.println("장난치지마");
-                return; }
+                return;
+            }
         } catch (Exception e) {
             System.out.println("숫자기호만 입력해주세요");
             return;
