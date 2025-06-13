@@ -2,24 +2,26 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Lebj44 {
+public class Bye74 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         List<Integer> ls = new ArrayList<>();
-        int a = sc.nextInt();
-        int d = 0;
 
-        for (int i = 0; i < a; i++) {
+        for (int i = 0; i < 6; i++) {
             ls.add(sc.nextInt());
         }
 
-        int c = sc.nextInt();
-
         for (int i = 0; i < ls.size(); i++) {
-            if (ls.get(i) == c) {
-                d ++;
+            int a = Integer.MAX_VALUE;
+            if (ls.get(i) < a) {
+                a = ls.get(i);
+                System.out.println(a + " ");
+                ls.remove(a);
             }
+            a = Integer.MAX_VALUE;
         }
-        System.out.println(d);
+
+        sc.close();
     }
 }
+
